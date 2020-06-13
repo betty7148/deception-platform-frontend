@@ -18,7 +18,7 @@ Vue.use(VueRouter);
 import router from './router.js';
 
 
- 
+
 var store= new Vuex.Store({
     state:{//this.$store.state.**
         csrf_token: '',

@@ -1,6 +1,6 @@
 <template>
 <div class="login">
-    <h2>欺骗防御项目登录</h2>
+    <h2 style="color:white">欺骗防御项目登录</h2>
     <el-form ref="form" :model="form" label-width="80px">
         <el-form-item label="用户名">
             <el-input v-model="form.name" placeholder="请输入用户名" size="medium"></el-input>
@@ -29,6 +29,10 @@ export default {
       }
     },
     created(){
+        // let htmlobj = document.getElementsByTagName('html');
+        // console.log(htmlobj)
+        // htmlobj[0].style.backgroundImage = "url(public/imgs/login_bg.jpg)"
+       
         axios.get('api/v1/base/status').then(res => {
             let { data } = res;
             let { result , msg , data:body } = data;
@@ -80,7 +84,7 @@ export default {
 }
 </script>
 
-<style>
+<style >
 /* body{
     background-color: aliceblue;
 } */
@@ -91,8 +95,9 @@ export default {
   border: 1px solid #ccc;
   padding: 20px;
   margin-top: 100px;
+  
 }
-.login .el-form-item__content {
-  /* margin-left: 0px !important; */
-}
+/* html{
+    background-image:url('../../../public/imgs/login_bg.jpg')
+} */
 </style>

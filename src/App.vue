@@ -18,12 +18,24 @@ export default {
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+#app {
+  /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-} */
+  margin-top: 60px; */
+  
+}
+html{
+  margin: 0px;
+  padding: 0px;
+  /* background-image:url('../public/imgs/login_bg.jpg') */
+  /* height: auto!important; */
+}
+body{
+  width:100%;
+  height:100%;
+  /* height: 800px; */
+}
 </style>

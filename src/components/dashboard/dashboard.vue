@@ -109,6 +109,9 @@ export default {
       }
     },
     created(){
+        // let htmlobj = document.getElementsByTagName('html');
+        // htmlobj[0].style.backgroundImage = "";
+       
         // axios.get('api/v1/base/status').then(res => {
         //     let { data } = res;
         //     let { result , msg , data:body } = data;
@@ -134,6 +137,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+/* html{  */
+    /* background-color: aliceblue; */
+    /* background-image: url('../../../public/imgs/one.png'); */
+/* } */
 </style>

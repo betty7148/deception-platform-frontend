@@ -4,13 +4,14 @@ import dashboard from './components/dashboard/dashboard.vue'
 import alertmanege from './components/alertmanege/index.vue'
 import alertthing from './components/alertmanege/alertthing.vue'
 import alertrank from './components/alertmanege/alertrank.vue'
+import alertsend from './components/alertmanege/alertsend.vue'
 import usermanage from './components/usermanage/usermanage.vue'
 import usergroup from './components/usermanage/usergroup.vue'
 import user from './components/usermanage/user.vue'
 import operatelog from './components/usermanage/operatelog.vue'
 var vue_router = new VueRouter({
     routes:[
-        // {path:'/',redirect:'/home'},
+        { path:'/' , redirect:'/login' },
         // {
         //     path:'/home',
         //     component:FrontendHome,
@@ -79,6 +80,10 @@ var vue_router = new VueRouter({
                             path:'/dashboard/alertmanage/alertrank',
                             component: alertrank,
                             
+                        },
+                        {
+                            path:'/dashboard/alertmanage/alertsend',
+                            component: alertsend,
                         },
                     ]
                 },
