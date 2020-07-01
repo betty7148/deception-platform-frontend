@@ -1,6 +1,6 @@
 <template>
 <div class="login">
-    <h2 style="color:white">欺骗防御项目登录</h2>
+    <h2 >欺骗防御项目登录</h2>
     <el-form ref="form" :model="form" label-width="80px">
         <el-form-item label="用户名">
             <el-input v-model="form.name" placeholder="请输入用户名" size="medium"></el-input>

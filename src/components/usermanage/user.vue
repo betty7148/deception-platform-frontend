@@ -1,5 +1,5 @@
 <template>
-    <div class='user'>
+    <div class='user' >
         <el-container>
             <el-header style="text-align: left; font-size: 12px">
                 <span>首页/系统配置/用户管理</span>
@@ -63,7 +63,7 @@
             </div>
         </el-dialog> 
         <el-dialog title="修改用户" :visible.sync="dialogFormVisible1" width='40%'>
-            <el-form :model="form">
+            <el-form :model="form" >
                 <el-form-item label="用户名" :label-width="formLabelWidth">
                 <el-input v-model="update_username" autocomplete="off" label-width="100px"></el-input>
                 </el-form-item>
@@ -79,6 +79,7 @@
                 <el-button type="primary" @click="updateUser">确 定</el-button>
             </div>
         </el-dialog> 
+
     </div>
 </template>
 
@@ -93,6 +94,7 @@ export default {
             size: 5,
             dialogFormVisible: false,
             dialogFormVisible1: false,
+            dialogFormVisible2: true,
             totalNumber: 0,
             form: {
                 username: '',
@@ -110,9 +112,9 @@ export default {
     },
     methods:{
         getUserList(){
-            // var page = this.page - 1;
+            var page = this.page - 1;
             console.log(this.page+"   "+this.size)
-            axios.get('api/auth/v1/user?page='+this.page+'&size='+this.size)
+            axios.get('api/auth/v1/user?page='+page+'&size='+this.size)
             .then(res=>{
                 let { data:data1 } = res;
                 let { result, msg, data } = data1;
@@ -255,5 +257,12 @@ export default {
     position: absolute;
     right: 50px;
     top: 80px;
+}
+body.el-popup-parent--hidden{
+    padding-right:0px !important
+}
+html,body{
+    width:100%;
+    overflow-x:hidden
 }
 </style>

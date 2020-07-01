@@ -38,4 +38,8 @@ body{
   height:100%;
   /* height: 800px; */
 }
+*{
+  padding: 0px;
+  margin: 0px;
+}
 </style>

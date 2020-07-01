@@ -1,15 +1,15 @@
 <template>
-<div class='dashboard'>
-    <el-row class="tac">
-        <el-col :span="5" >
+<div class='dashboard' style="height:100vh">
+    <el-row class="tac" style="height:100vh">
+        <el-col :span="5" style="height:100vh">
             <el-menu
-            default-active="2"
+            default-active="6-2"
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose"
-            background-color="#fff"
+            background-color="white"
             text-color="black"
-            active-text-color="#ffd04b">
+            active-text-color="#ffd04b" > 
             <el-submenu index="1">
                 <template slot="title">
                     <i class="el-icon-location"></i>
