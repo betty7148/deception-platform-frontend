@@ -90,7 +90,7 @@ export default {
     data() {
         return {
             tableData: [],
-            page: 0,
+            page: 1,
             size: 5,
             dialogFormVisible: false,
             dialogFormVisible1: false,
@@ -112,7 +112,7 @@ export default {
     },
     methods:{
         getUserList(){
-            var page = this.page - 1;
+            var page = this.page-1;
             console.log(this.page+"   "+this.size)
             axios.get('api/auth/v1/user?page='+page+'&size='+this.size)
             .then(res=>{
@@ -261,8 +261,5 @@ export default {
 body.el-popup-parent--hidden{
     padding-right:0px !important
 }
-html,body{
-    width:100%;
-    overflow-x:hidden
-}
+
 </style>

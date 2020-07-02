@@ -1,5 +1,6 @@
 <template>
-<div class="login">
+<div id="login" >
+    <div class="login">
     <h2 >欺骗防御项目登录</h2>
     <el-form ref="form" :model="form" label-width="80px">
         <el-form-item label="用户名">
@@ -12,6 +13,8 @@
             <el-button type="primary" size='medium' @click="onSubmit">登录</el-button>
     </el-form>
 </div>
+</div>
+
    
 </template>
 
@@ -84,7 +87,8 @@ export default {
 }
 </script>
 
-<style >
+<style  scoped>
+    
 /* body{
     background-color: aliceblue;
 } */
@@ -94,10 +98,17 @@ export default {
   text-align: center;
   border: 1px solid #ccc;
   padding: 20px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  height:100%;
   
 }
 /* html{
     background-image:url('../../../public/imgs/login_bg.jpg')
 } */
+#login{
+    background-image: url("../../../public/imgs/login_bg.jpg");
+    background: url("../../../public/imgs/login_bg.jpg") no-repeat 100% 0;
+    background-size: cover;
+    height:100%;
+}
 </style>

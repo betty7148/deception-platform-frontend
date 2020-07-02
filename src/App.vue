@@ -19,6 +19,8 @@ export default {
 
 <style>
 #app {
+  width:100%;
+  height:100%;
   /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,5 +43,11 @@ body{
 *{
   padding: 0px;
   margin: 0px;
+  /* font-size:0px; */
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    overflow-x:hidden
 }
 </style>
