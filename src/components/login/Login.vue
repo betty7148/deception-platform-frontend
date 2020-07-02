@@ -1,8 +1,9 @@
 <template>
 <div id="login" >
     <div class="login">
-    <h2 >欺骗防御项目登录</h2>
+    
     <el-form ref="form" :model="form" label-width="80px">
+        <h2 >欺骗防御项目登录</h2>
         <el-form-item label="用户名">
             <el-input v-model="form.name" placeholder="请输入用户名" size="medium"></el-input>
         </el-form-item>
@@ -94,13 +95,11 @@ export default {
 } */
 .login {
   width: 30%;
-  margin: auto;
   text-align: center;
   border: 1px solid #ccc;
   padding: 20px;
-  /* margin-top: 100px; */
-  height:100%;
-  
+  height: 250px;
+  background-color: white
 }
 /* html{
     background-image:url('../../../public/imgs/login_bg.jpg')
@@ -110,5 +109,8 @@ export default {
     background: url("../../../public/imgs/login_bg.jpg") no-repeat 100% 0;
     background-size: cover;
     height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 </style>
